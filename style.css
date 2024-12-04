@@ -1,0 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.input-section label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.input-section input[type="number"], .input-section input[type="date"] {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.input-section button {
+  padding: 5px 10px;
+  background-color: #df1010;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.expenses-list {
+  margin: 20px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #0f42e7;
+  color: white;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+.delete-btn {
+  padding: 5px 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  padding: 5px 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+
+.input-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.input-section .form-group {
+  width: 23%;
+}
+
+.input-section button {
+  width: 15%;
+  height: 100%;
+}
+
+
+.table {
+  width: 100%;
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+
+canvas#expenseChart {
+  width: 100% !important;
+  max-width: 500px;
+  height: auto !important;
+  margin: 0 auto; 
+  display: block; 
+}
+
+div > h2 {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .input-section {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .input-section label,
+  .input-section select,
+  .input-section input,
+  .input-section button {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+  table {
+      font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+      font-size: 1.5rem;
+  }
+  .input-section {
+      padding: 15px;
+  }
+  .expenses-list {
+      margin: 10px;
+  }
+}
